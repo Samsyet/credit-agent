@@ -23,7 +23,7 @@ async def process(state: State) -> Dict[str, Any]:
     await asyncio.sleep(delay)
 
     
-    num_zeroes = data.binary.count("0")
+    num_zeroes = binary_number.count("0")
 
     await send_to_hive(
         destination_agent_id="application_agent",
