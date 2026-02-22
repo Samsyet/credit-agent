@@ -11,6 +11,7 @@ from hive_hook import (
     EndpointEnum,
     send_to_hive,
     start_server,
+    hive_hook
 )
 
 class State(TypedDict):
