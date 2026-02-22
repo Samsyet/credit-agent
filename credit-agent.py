@@ -11,14 +11,12 @@ from hive_hook import (
     EndpointEnum,
     send_to_hive,
     start_server,
-    hive_hook
 )
 
 class State(TypedDict):
     binary_number: str
 
 
-@hive_hook({"binary": BinaryData})
 async def process(state: State) -> Dict[str, Any]:
     binary_number = state["binary_number"]
     delay = random.randint(10, 20)
